@@ -205,8 +205,78 @@ label {
 /* ===== LAYOUT STYLES ====== */
 
 /* ===== MODULAR STYLES ===== */
-#input-button{
+form li{
+  padding-bottom: 1.182em
+}
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color:#C2C2C2;
+  vertical-align: bottom;
+  -ms-transform: scale(1.2); /* IE */
+  -moz-transform: scale(1.2); /* FF */
+  -webkit-transform: scale(1.2); /* Safari and Chrome */
+  -o-transform: scale(1.2); /* Opera */
+}
+input[type="checkbox"] + label {
+  display: inline;
+}
+#age-verification + label{
+  display:block;
+  padding-left: 1.25em;
+}
+
+#input-submit input[type="submit"]{
+  background-color:#C2C2C2;
+  font-style:'Source Sans Pro', sans-serif;
+}
+
+#input-submit input[type="submit"]:hover{
   background-color: #484848;
+  color:#C2C2C2;
+}
+
+#input-email input[type="email"]{
+  background-color: #A1A1A1;
+}
+
+label{
+  font-family: 'Dancing Script', cursive;
+}
+
+::placeholder{
+  color:#C2C2C2;
+  font-family: 'Indie Flower', cursive;
+}
+
+h1{
+font-size:2em;
+font-family: 'Source Sans Pro', sans-serif;
+padding-bottom:1em;
+}
+
+p{
+padding-bottom: 1em;
+font-family: 'Dancing Script', cursive;
+}
+
+body{
+text-align: center;
+background-color:#FFE37B; 
 }
 
 /* ===== STATE STYLES ======= */
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1{
+    font-size: 0.938em;
+  }
+}
